@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial, sans-serif;
+}
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+	height: 780px;
+	background-color: rgb(231, 230, 221);
+}
+#banner {
+	width: 960px;
+}
+#top-padding {
+	background-color: rgb(69, 119, 106);
+	width: 960px;
+	height: 100px;
+}
+#banner a {
+	color: rgb(200, 207, 176);
+}
+img#logo {
+	float: left;
+	width: 150px;
+	height: 170px;
+}
+ul#map-signin {
+	text-align: right;
+	font-size: .8em;
+	padding: 10px;
+}
+ul#map-signin li {
+	display: inline;
+}
+ul#map-signin li a {
+	padding: 0px 10px;
+}
+ul#map-signin li {
+	border-left: 1px solid rgb(200, 207, 176);
+}
+ul#map-signin li.no-border, #main-content ul li.no-border {
+	border: none;
+	padding-left: 0px;
+}
+#search {
+	background-color: rgb(57, 71, 61);
+	width: 230px;
+	height: 40px;
+	margin: 25px 10px 0px 0px;
+	float: right;
+}
+#search input {
+	margin: 10px 0px 10px 10px;
+	padding: 3px;
+}
+#search button {
+	margin: 10px;
+	padding: 5px;
+	background-color: rgb(125, 135, 77);
+	color: white;
+}
+#top-nav {
+	background-color: rgb(28, 16, 2);
+	padding: 30px 0px;
+	border-bottom: 7px solid rgb(175, 182, 152);
+}
+#top-nav li {
+	display: inline;
+	padding: 10px;
+	font-size: 0.9em;
+}
+#top-nav li a, #main-content ul li a {
+	text-decoration: none;
+}
+#top-nav #home {
+	background-color: rgb(175, 182, 152);
+	padding-bottom: 0px;
+	border-bottom: 32px solid rgb(175, 182, 152);
+}
+#top-nav #home a {
+	color: black;
+}
+#left-sidebar, #main-content, #right-sidebar {
+	margin: 20px 15px;
+}
+#left-sidebar {
+	width: 220px;
+	height: 600px;
+	float: left;
+}
+#left-sidebar #who-we-are {
+	width: 220px;
+	height: 350px;
+	background-color: white;
+}
+#left-sidebar #april-2013 {
+	width: 220px;
+	background-color: white;
+	margin-top: 20px;
+}
+#left-sidebar h3 {
+	background-color: rgb(170, 145, 101);
+	color: white;
+	font-weight: 300;
+	padding: 20px;
+}
+#left-sidebar p, #right-sidebar p {
+	font-size: .8em;
+	color: rgb(104, 101, 93);
+}
+#left-sidebar p {
+	padding: 20px;
+}
+#right-sidebar p {
+	padding: 10px;
+}
+#left-sidebar p span.underline {
+	text-decoration: underline;
+}
+#left-sidebar p span.italics {
+	font-style: italic;
+}
+#left-sidebar p a {
+	color: blue;
+}
+#left-sidebar button {
+	padding: 5px;
+	background-color: rgb(240, 238, 234);
+	color: rgb(122, 112, 97);
+	font-weight: bold;
+}
+#left-sidebar button#staff {
+	margin-left: 20px;
+}
+#left-sidebar #april-2013 img {
+	width: 220px;
+}
+#left-sidebar #april-2013 #peace {
+	width: 160px;
+	height: 120px;
+	background-color: rgb(189, 173, 145);
+	margin: 0px 0px 10px 10px;
+}
+#left-sidebar #april-2013 #peace h4 {
+	padding: 10px;
+	color: rgb(104, 101, 93);
+}
+#left-sidebar #april-2013 #peace p {
+	padding: 10px;
+}
+#main-content {
+	width: 430px;
+	height: 600px;
+	float: left;
+}
+#main-content img#man-and-boy {
+	width: 410px;
+	border: 10px solid white;
+	margin-top: 0px;
+}
+#main-content img {
+	width: 130px;
+	float: left;
+	margin: 20px 0px 20px 0px;
+	clear: both;
+}
+#main-content h1 {
+	font-weight: 200;
+	border-bottom: 1px dotted rgb(148, 123, 79);
+}
+#main-content h3, #main-content ul {
+	width: 280px;
+	float: right;
+}
+#main-content h3 {
+	font-weight: 300;
+	padding-top: 30px;
+}
+#main-content ul {
+	padding: 10px 0px 30px;
+}
+#main-content ul li {
+	display: inline;
+	font-size: .85em;
+	padding: 0px 5px;
+	border-left: 1px solid rgb(135, 69, 53);
+}
+#main-content ul li a {
+	color: rgb(135, 69, 53);
+}
+#right-sidebar {
+	width: 220px;
+	height: 600px;
+	float: right;
+}
+#right-sidebar #whats-new {
+	width: 220px;
+	height: 256px;
+	background-color: rgb(91, 156, 129);
+	border-radius: 0px 30px 30px;
+}
+#right-sidebar #whats-new h3 {
+	color: white;
+	text-align: right;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-right: 20px;
+}
+#right-sidebar #whats-new #cadence-91 {
+	background-color: white;
+	width: 200px;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 30px;
+}
+#right-sidebar #whats-new #cadence-91 h5 {
+	padding: 10px;
+}
+#right-sidebar #whats-new #cadence-91 button {
+	margin: 10px;
+	padding: 5px;
+	background-color: rgb(148, 123, 79);
+	color: white;
+}
+#right-sidebar #dear-rosa {
+	width: 214px;
+	height: 290px;
+	background-color: rgb(164, 107, 84);
+	margin-top: 20px;
+	text-align: center;
+	color: white;
+	border: 3px solid white;
+}
+#right-sidebar #dear-rosa h3 {
+	font-size: 1.5em;
+	font-weight: 400;
+	padding: 30px 10px 10px;
+}
+#right-sidebar #dear-rosa p {
+	color: white;
+}
+#right-sidebar #dear-rosa button {
+	width: 180px;
+	height: 30px;
+	background-color: rgb(235, 153, 51);
+	color: white;
+	font-size: 1em;
+	font-family: "lucida calligraphy", sans-serif; 
+}

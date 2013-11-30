@@ -1,0 +1,32 @@
+* {
+	font-family: sans-serif;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+table {
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid black;
+	padding: 10px;
+}
+textarea {
+	width: 200px;
+	height: 100px;
+}
+a {
+	float: right;
+}
+div.step1 {
+	padding-bottom: 20px;
+}
+div.step2 {
+	border-top: 2px solid black;
+	padding-top: 10px;
+}
+input, select {
+	font-size: 1em;
+	padding: 5px;
+}
