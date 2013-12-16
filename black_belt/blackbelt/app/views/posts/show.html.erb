@@ -1,0 +1,33 @@
+<div class="container">
+	<h2>Bright Idea</h2>
+	<div class="row post">
+		<div class="col-md-2 bold"><%= @post.user.first_name %> says:</div>
+		<div class="col-md-6"><%= @post.content %></div>
+	</div>
+
+	<p>People who liked this post:</p>
+
+	<table>
+		<thead>
+			<tr>
+				<th>User ID</th>
+				<th>Name</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @likes.each do |like| %>
+				<tr>
+					<td><%= like.user_id %></td>
+					<td><%= like.user.first_name + ' ' + like.user.last_name %></td>
+					<td><%= like.user.email %></td>
+				</tr>
+			<% end %>	
+		</tbody>
+	</table>
+
+	<%= link_to 'Back to Bright Ideas', posts_path %>
+
+
+
+</div>

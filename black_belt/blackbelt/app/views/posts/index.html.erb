@@ -1,0 +1,46 @@
+<div class="container">
+	<h1>Bright Ideas</h1>
+
+	<% if signed_in? %>
+		<p class='success'>Welcome, <%= current_user.first_name %>!</p>
+		<p><%= link_to 'Logout', session_path(current_user), method: :delete, class: 'btn btn-primary' %></p>
+
+		<hr>
+
+		<h3>Post a Bright Idea!</h3>
+		<%= simple_form_for @post do |f| %>
+			<%=f.input :content, label: false, placeholder: 'Post something witty...' %>
+			<%=f.input :user_id, as: :hidden, input_html: { value: session[:user_id] } %>
+			<%=f.button :submit, 'Post', class: 'btn btn-success' %>
+		<% end %>
+	<% else %>
+		<p class='error'>Please register or login to post a bright idea or to "like" a bright idea.</p>
+		<p><%= link_to 'Register', new_user_path, class: 'btn btn-primary', id: 'register' %></p>
+		<p><%= link_to 'Login', new_session_path, class: 'btn btn-primary' %></p>
+	<% end %>
+
+	<hr>
+
+	<p class='notice'><%= notice %></p>
+	<% @posts.each do |post| %>
+		<div class="row">
+			<div class="col-md-2 bold"><%= post.user.first_name %> says:</div>
+			<div class="col-md-6"><%= post.content %></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2"></div>
+				<% if signed_in? %>
+					<div class="col-md-1 likes">
+						<%= button_to 'Like', post_likes_path(post) %>
+					</div>
+				<% end %>
+			<div class="col-md-3">
+				<%= link_to post.likes.count.to_s + ' people', post_path(post) %> like this.
+			</div> 
+		</div>
+	<% end %>
+
+
+
+
+</div>
